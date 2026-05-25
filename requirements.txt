@@ -1,0 +1,35 @@
+# DermaAI Pakistan v2.0 — Python 3.10 / 3.11 / 3.12 compatible
+# Works on: Hugging Face Spaces (CPU free) · Streamlit Cloud · Local
+
+# ── Core UI ────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Vision / ML ────────────────────────────────────────────────────
+# NOTE: on HF Spaces free-CPU tier torch installs the CPU build automatically.
+# For local GPU, pip will install the CUDA build. Both work fine.
+torch>=2.1.0
+torchvision>=0.16.0
+timm>=0.9.12
+
+# ── Image processing ───────────────────────────────────────────────
+Pillow>=10.0.0
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+
+# ── Explainability (XAI) ───────────────────────────────────────────
+grad-cam>=1.5.0
+
+# ── RAG (vector search) ────────────────────────────────────────────
+sentence-transformers>=2.7.0
+faiss-cpu>=1.7.4
+
+# ── AI Provider SDKs ───────────────────────────────────────────────
+# Gemini (Google AI Studio — free 15 req/min)
+google-generativeai>=0.7.2
+
+# Grok (xAI) + Qwen (Alibaba DashScope) — both use OpenAI-compatible API
+openai>=1.30.0
+
+# ── Scientific utilities (pulled in by sentence-transformers; listed for clarity) ─
+scipy>=1.11.0
+scikit-learn>=1.3.0
