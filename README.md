@@ -1,0 +1,35 @@
+# ⚕️ DermaAI Pakistan v2.0
+
+DermaAI Pakistan is an advanced, bilingual (English/Urdu) AI-powered dermatology assistant. It utilizes a **Multi-Agent RAG (Retrieval-Augmented Generation) architecture** to analyze skin conditions, provide treatment guidance based on local Pakistan-specific formularies, and explain AI decision-making using XAI (Explainable AI) heatmaps.
+
+## 🚀 Features
+- **Multi-Provider AI:** Switch between **Google Gemini, Groq Cloud (Llama), and Alibaba Qwen** vision models.
+- **Bilingual Support:** Full English and Urdu (اردو) localization for local patient accessibility.
+- **RAG Engine:** Uses FAISS and Sentence Transformers to retrieve clinically relevant information from a curated knowledge base.
+- **XAI Heatmaps:** Implements Grad-CAM and gradient-based attention maps to visualize where the AI is focusing on the skin lesion.
+- **Local Medicine DB:** Integrated with Pakistan-specific DRAP formulary data.
+
+## 🛠 Tech Stack
+- **Frontend:** Streamlit
+- **AI/LLMs:** Google Generative AI SDK, OpenAI-compatible API (Groq/Qwen)
+- **Computer Vision:** PyTorch, EfficientNet-B0, torchvision
+- **Explainability:** pytorch-grad-cam, OpenCV
+- **Vector Search:** FAISS, Sentence Transformers (all-MiniLM-L6-v2)
+- **Deployment:** Hugging Face Spaces
+
+## 🏗 Architecture
+The system employs a sophisticated multi-agent approach:
+1.  **Vision Agent:** Analyzes dermatological images for condition detection.
+2.  **RAG Agent:** Retrieves evidence-based clinical context.
+3.  **Medicine Agent:** Maps detections to local brand-name medications.
+4.  **Grad-CAM Agent:** Generates attention heatmaps for visual diagnostic support.
+5.  **Chat Agent:** Multi-turn context-aware assistant for follow-up questions.
+
+## 📈 Model Training
+The project includes a dedicated training pipeline (`train_colab.py`) built to fine-tune an **EfficientNet-B0** model on the HAM10000 dataset, enabling custom diagnostic features that are then deployed to the production application.
+
+## 🩺 Disclaimer
+DermaAI Pakistan is an **educational and informational tool only**. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a licensed, board-certified dermatologist for clinical assessment.
+
+---
+*Developed as a contribution to AI-driven healthcare in Pakistan.*
