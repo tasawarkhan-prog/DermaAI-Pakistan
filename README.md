@@ -1,5 +1,8 @@
 # ⚕️ DermaAI Pakistan v2.0
-[Check out the Live Demo here]((https://huggingface.co/spaces/Tasawar-prog1/dermaai-pakistan-v2))
+
+[![Live Demo](https://img.shields.io/badge/HuggingFace-Live%20Demo-blue?style=for-the-badge&logo=huggingface)](https://huggingface.co/spaces/Tasawar-prog1/dermaai-pakistan-v2)
+
+DermaAI Pakistan is an advanced, bilingual (English/Urdu) AI-powered dermatology assistant. It utilizes a **Multi-Agent RAG (Retrieval-Augmented Generation) architecture** to analyze skin conditions, provide treatment guidance based on local Pakistan-specific formularies, and explain AI decision-making using XAI (Explainable AI) heatmaps.
 
 DermaAI Pakistan is an advanced, bilingual (English/Urdu) AI-powered dermatology assistant. It utilizes a **Multi-Agent RAG (Retrieval-Augmented Generation) architecture** to analyze skin conditions, provide treatment guidance based on local Pakistan-specific formularies, and explain AI decision-making using XAI (Explainable AI) heatmaps.
 
